@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:paddingTop="10dp"
+        android:id="@+id/alert_shop_box"
+        android:background="@drawable/shape_radiu_10"
+        android:backgroundTint="@color/red"
+        >
+        <TextView
+            android:id="@+id/alert_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择优惠卷"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textColor="@color/whilte"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/alert_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alert_name"
+            android:layout_marginTop="20dp"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sumbit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_below="@id/alert_shop_box"
+        android:layout_centerHorizontal="true"
+        android:text="提交购买"
+        android:background="@drawable/shape_radiu_10"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/whilte"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        />
+
+</RelativeLayout>

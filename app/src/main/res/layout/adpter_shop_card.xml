@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:checked="false"
+        android:theme="@style/MyCheckBox"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:elevation="10dp"
+        android:id="@+id/adper_card_box"
+        android:background="@drawable/shape_radiu_10"
+        android:backgroundTint="@color/whilte"
+        >
+
+
+        <TextView
+            android:id="@+id/card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠卷"
+            android:textSize="16sp"
+            android:textColor="@color/back"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/card_money"
+            />
+
+        <TextView
+            android:id="@+id/card_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥10元"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/card_details"
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_name"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/card_money"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/back_30"
+            android:text="满100元减10元"
+            android:layout_marginLeft="20dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/card_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/card_money"
+            android:layout_below="@id/card_details"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/back_30"
+            android:text="过期时间：2020-10-6 19:40"
+            android:layout_marginLeft="20dp"
+            />
+
+
+
+    </RelativeLayout>
+</LinearLayout>

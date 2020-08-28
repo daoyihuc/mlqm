@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/daoyihuc/ku@1.0/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/daoyihuc/ku@1.0/css/editormd.css" />
+    <script src="https://cdn.jsdelivr.net/gh/daoyihuc/ku@1.0/lib/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/daoyihuc/ku@1.0/lib/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/daoyihuc/ku@1.0/lib/prettify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/daoyihuc/ku@1.0/lib/raphael.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/daoyihuc/ku@1.0/lib/underscore.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/daoyihuc/ku@1.0/lib/sequence-diagram.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/daoyihuc/ku@1.0/lib/flowchart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/daoyihuc/ku@1.0/lib/jquery.flowchart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/daoyihuc/ku@1.0/lib/editormd.js"></script>
+
+</head>
+<body>
+
+<!--在该div中展示,如有初始化的数据可以放在textarea中-->
+<div id="testEditorMdview">
+    <textarea id="appendTest" style="display:none;"></textarea>
+</div>
+
+</body>
+<script type="text/javascript">
+    $(function () {
+        console.log("dada")
+        // $("#testEditorMdview").html('<textarea id="appendTest" style="display:none;"></textarea>');
+        var content="#### 辅导内容：\n" +
+            "为全国<font color=\"red\">1-9年级</font>中小学生提供<font color=\"red\">语文、数学、英语、物理、化学、生物、历史、政治、地理</font>9门学科课后作业一对一视频辅导。\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "#### 辅导时间：\n" +
+            "<font color=\"red\"> 每天上午9点至晚上11点，包括：平时、周末和寒暑假。\n" +
+            "</font>\n" +
+            "\n" +
+            "\n" +
+            "点击小程序首页的“照相机”图标上传题目后进入直播间<font color=\"red\">稍等30秒</font>即可获得老师一对一视频辅导服务。，等待老师30秒即可获得辅导。\n" +
+            "\n" +
+            "\n" +
+            "<font color=\"red\">\n" +
+            "备注：\n" +
+            "\n" +
+            "1、学生端APP正在紧张测试中，争取尽快提供给各位同学使用，到时同学们可以在每天的9点至23点与老师聊天，与老师发送文字、图片、语音信息，还可以跟自己喜欢的老师发起一对一视频请教各类问题，请大家耐心等候。\n" +
+            "\n" +
+            "2、再也不会出现上传了题目却等不到老师的情况，上传题目1-3分之内老师会主动发起视频，同学们只需要接通视频就可以获得辅导了。</font>\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "“我的优惠券”里可以邀请好友赚取优惠券，每邀请3位同学就可以获得一张30元优惠券。\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "使用过程中，如有任何问题，欢迎随时与我们联系：\n" +
+            "\n" +
+            "电话：<font color=\"red\">020-82494318 </font>\n" +
+            "\n" +
+            "客服老师电话及微信：<font color=\"red\">18922737998 </font>\n" +
+            "\n" +
+            "客服QQ：<font color=\"red\">3359598660 </font>\n" +
+            "\n" +
+            "应聘老师请将电子版简历发至邮箱：mlqmxxw@163.com\n" +
+            "\n" +
+            "如你有好的建议请发电子邮件给总经理：ctxxgz@163.com\n" +
+            "\n" +
+            "网址：www.mlqmxxw.com";//获取需要转换的内容
+        $("#appendTest").val(content);//将需要转换的内容加到转换后展示容器的textarea隐藏标签中
+        //转换开始,第一个参数是上面的div的id
+        test=editormd.markdownToHTML("testEditorMdview", {
+            htmlDecode: "style,script,iframe", //可以过滤标签解码
+            emoji: true,
+            saveHTMLToTextarea: true,
+            taskList:true,
+            tex: true,               // 默认不解析
+            flowChart:true,         // 默认不解析
+            sequenceDiagram:true,  // 默认不解析
+        });
+    })
+</script>
+</html>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shap_cardpackage"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:elevation="10dp"
+    android:id="@+id/adper_card_box"
+    >
+
+
+    <TextView
+        android:id="@+id/card_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="优惠卷"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/whilte"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/card_money"
+        />
+
+    <TextView
+        android:id="@+id/card_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥10元"
+        android:textColor="@color/whilte"
+        android:textSize="30sp"
+        android:layout_centerVertical="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/card_details"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_name"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/card_money"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/whilte"
+        android:text="满100元减10元"
+        android:layout_marginLeft="20dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/card_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_toRightOf="@id/card_money"
+        android:layout_below="@id/card_details"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/whilte"
+        android:text="过期时间：2020-10-6 19:40"
+        android:layout_marginLeft="20dp"
+        />
+
+</RelativeLayout>

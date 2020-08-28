@@ -1,0 +1,3 @@
+include ':app'
+rootProject.name='名列前茅'
+include ':easeui'

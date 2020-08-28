@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shap_shop"
+    >
+    <TextView
+        android:id="@+id/adap_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1-9年级10分钟体验套餐"
+        android:maxLines="1"
+        android:maxLength="15"
+        android:textSize="20sp"
+        android:ellipsize="end"
+        android:textColor="@color/back"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/adap_shop_details"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adap_shop_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="可与老师视频问答学习10分钟，可看回播。更多优惠请见“我的优惠券”。"
+        android:textColor="@color/back_30"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/adap_shop_rankbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/adap_shop_details"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年级:"
+            android:textSize="16sp"
+            android:ellipsize="end"
+            android:textColor="@color/back"
+            />
+        <TextView
+            android:id="@+id/adap_shop_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1-9年级"
+            android:maxLines="3"
+            android:maxWidth="200dp"
+            android:textSize="14sp"
+            android:ellipsize="end"
+            android:textColor="@color/back"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/adap_shop_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="科目：数学,语文,英语"
+        android:maxLines="1"
+        android:maxLength="15"
+        android:textSize="16sp"
+        android:ellipsize="end"
+        android:textColor="@color/back"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/adap_shop_rankbox"
+        />
+    <TextView
+        android:id="@+id/adap_shop_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="可使用 600 秒 7天内有效"
+        android:maxLines="1"
+        android:maxLength="15"
+        android:textSize="16sp"
+        android:ellipsize="end"
+        android:textColor="@color/back"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/adap_shop_class"
+        />
+    <TextView
+        android:id="@+id/adap_shop_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥15.00"
+        android:maxLines="1"
+        android:maxLength="15"
+        android:textSize="20sp"
+        android:ellipsize="end"
+        android:textColor="@color/red"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/adap_shop_money2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥20.00"
+        android:maxLines="1"
+        android:maxLength="15"
+        android:textSize="20sp"
+        android:ellipsize="end"
+        android:textColor="@color/back_30"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/adap_shop_money"
+        />
+
+    <Button
+        android:id="@+id/adap_shop_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adap_shop_money2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="39dp"
+        android:layout_marginRight="9dp"
+        android:background="@drawable/shap_go"
+        android:ellipsize="end"
+        android:stateListAnimator="@null"
+        android:text="立即购买"
+        android:textColor="@color/whilte"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

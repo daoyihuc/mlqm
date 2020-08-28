@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:transitionOrdering="together"
+               android:duration="2000"
+        >
+
+    <slide android:slideEdge="left">
+
+        <targets>
+            <target android:targetId="@id/home_title"></target>
+            <target android:targetId="@+id/home_detach_music"></target>
+        </targets>
+    </slide>
+
+    <slide android:slideEdge="right">
+        <targets>
+            <target android:targetId="@+id/home_clip_image"></target>
+        </targets>
+    </slide>
+
+    <slide android:slideEdge="bottom">
+        <targets>
+            <target android:targetId="@+id/home_compound_VM"></target>
+        </targets>
+    </slide>
+    <slide android:slideEdge="top" android:duration="500">
+        <targets>
+            <target android:targetId="@id/home_user_image"></target>
+        </targets>
+    </slide>
+    <fade>
+        <targets>
+            <target android:targetId="@android:id/statusBarBackground"
+                tools:targetApi="lollipop"></target>
+            <target android:targetId="@+id/home_clip_vedio"></target>
+        </targets>
+    </fade>
+
+</transitionSet>
